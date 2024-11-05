@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동차 부품 회사</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">회사 로고</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#page1">회사 소개</a></li>
+                <li><a href="#page2">기계 소개</a></li>
+                <li><a href="#page3">핵심 가치 1</a></li>
+                <li><a href="#page4">핵심 가치 2</a></li>
+                <li><a href="#page5">미래 방향</a></li>
+                <li><a href="#page6">성과</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 1번째 페이지 -->
+    <section id="page1" class="section intro">
+        <div class="content">
+            <img src="https://via.placeholder.com/800x400" alt="공장 내부 이미지" class="intro-image">
+            <div class="text">
+                <p>회사에 대한 간단한 설명</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2번째 페이지 -->
+    <section id="page2" class="section machines">
+        <h2>회사 기계 소개</h2>
+        <button class="more-button">MORE</button>
+        <div class="machine-images">
+            <img src="https://via.placeholder.com/400x300" alt="기계 이미지 1">
+            <img src="https://via.placeholder.com/400x300" alt="기계 이미지 2">
+        </div>
+    </section>
+
+    <!-- 3번째 페이지 -->
+    <section id="page3" class="section core-values">
+        <h2>핵심 가치</h2>
+        <div class="content">
+            <p>저희 회사가 중요하게 생각하는 것은 ~~~입니다.</p>
+            <img src="https://via.placeholder.com/400x400" alt="직원들 작업 이미지" class="employees-image">
+        </div>
+    </section>
+
+    <!-- 4번째 페이지 -->
+    <section id="page4" class="section core-values-cards">
+        <h2>핵심 가치</h2>
+        <div class="card-container">
+            <div class="card">품질 우선</div>
+            <div class="card">고객 만족</div>
+            <div class="card">기술 혁신</div>
+        </div>
+    </section>
+
+    <!-- 5번째 페이지 -->
+    <section id="page5" class="section future">
+        <h2>미래 방향</h2>
+        <div class="card-container">
+            <div class="card">친환경 제품 개발</div>
+            <div class="card">글로벌 확장</div>
+            <div class="card">첨단 기술 도입</div>
+        </div>
+    </section>
+
+    <!-- 6번째 페이지 -->
+    <section id="page6" class="section achievements">
+        <h2>회사 성과</h2>
+        <p>저희 회사는 지난 10년간 수많은 성과를 이뤄냈습니다. 지속적으로 성장하며, 업계 최고의 자리를 목표로 하고 있습니다.</p>
+    </section>
+
+    <footer class="footer">
+        <div class="logo">회사 로고</div>
+        <p>이메일: example@company.com | 전화번호: 123-456-7890</p>
+        <div class="contact">
+            <p>  오픈채팅</p>
+            <img src="https://via.placeholder.com/100" alt="오픈채팅 QR코드">
+        </div>
+    </footer>
+</body>
+</html>
+<style>
+    /* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #2D3E4E;
+    background-color: #E8ECEB;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #E8ECEB;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #2D3E4E;
+    text-decoration: none;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.intro .content {
+    position: relative;
+}
+
+.intro-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text {
+    color: #2D3E4E;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.machines, .future {
+    background-color: #8CBDB9;
+    color: #fff;
+}
+
+.more-button {
+    background-color: #E09E50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.more-button {
+    display: block;
+    margin: 10px 0 20px 20px; 
+    text-align: left;
+}
+
+.machines h2 {
+    text-align: left;
+    margin-left: 20px; 
+}
+
+.core-values h2 {
+    text-align: left;
+    margin-left: 20px; 
+}
+
+.machine-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.machine-images img {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.core-values, .achievements {
+    background-color: #E8ECEB;
+}
+
+.core-values .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.employees-image {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #E09E50;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+/* footer 스타일 */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2D3E4E;
+    color: #fff;
+}
+
+.footer .logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer .contact-info {
+    text-align: center;
+}
+
+.footer .contact-info p {
+    margin: 5px 0;
+}
+
+.footer .qr-code img {
+    width: 100px;
+    height: 100px;
+}
+
+</style>
